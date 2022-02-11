@@ -57,18 +57,18 @@ Depuis votre terminal de commande :
 $ git clone https://github.com/Andy-d-g/Form-Authentification.git
 
 # Aller dans le repertoire
-$ cd Gestion-de-projet---D/
+$ cd Predicteur-d-emotions/
 
 # Installer les packages (server) [ / ]
 $ cd Server
-$ npm i
+$ npm ci
 
 # Lancer le server en hotload [ /Server ]
 $ npm run start
 
 # Installer les package (client) [ /Client ]
 $ cd Client
-$ npm i
+$ npm ci
 
 # Lancer le projet
 $ npm run dev
