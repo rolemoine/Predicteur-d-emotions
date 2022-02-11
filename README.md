@@ -14,10 +14,14 @@
   <a href="#technologies">Technologie utilisé</a> 
 </div>
 
-# A propos
+## A propos
 
 Ce repository est composé d'un serveur et d'un client.
 Projet universitaire en groupe 
+
+## A faire :
+
+Voir le Jira du projet
 
 ## Technologies
 
