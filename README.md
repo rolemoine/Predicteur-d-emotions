@@ -17,6 +17,7 @@
 # A propos
 
 Ce repository est composé d'un serveur et d'un client.
+Projet universitaire en groupe 
 
 ## Technologies
 
