@@ -1,7 +1,7 @@
 <div align="center">
   <h1>
     <br>
-    <a href=""><img src="D.png" alt="Favicon" width="200"></a>
+    <a href=""><img src="favicon.png" alt="Bad or Good" width="200"></a>
     <br>
       Detection emotion 
     <br>
