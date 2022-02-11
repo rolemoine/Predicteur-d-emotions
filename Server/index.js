@@ -5,8 +5,6 @@ import helmet from 'helmet'
 import rateLimit from 'express-rate-limit';
 
 const PORT = 8000
-const DB_NAME = 'database.json'
-const DB_ENCODING = 'utf-8'
 
 const limiter = rateLimit({
     windowMs: 15 * 60 * 1000, 
@@ -29,16 +27,13 @@ class Server {
         this.app = express()
         this.init()
         this.listen(port)
-        //this.database = new Database(DB_NAME, DB_ENCODING)
+        //this.database = new Database(...)
     }
     
     router = () => {
         this.app.post('/analyse', async (req, res) => {
             // res = predict(req.body.line, req.body.emotion)
             let prediction = true
-            console.log(req.body.line)
-            console.log(req.body.emotion)
-   
             res.send(prediction)
         })
     }

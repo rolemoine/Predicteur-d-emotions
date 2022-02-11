@@ -1,7 +1,7 @@
 <div align="center">
   <h1>
     <br>
-    <a href=""><img src="server.jpg" alt="Favicon" width="200"></a>
+    <a href=""><img src="D.png" alt="Favicon" width="200"></a>
     <br>
       Detection emotion 
     <br>
@@ -24,7 +24,6 @@ Client :
 ```
   # Framework : 
     - NuxtJS
-    - VueJS
 
   # Package :
     - axios
@@ -35,12 +34,14 @@ Server :
   # Environnement : 
     - NodeJS
   
+  # Base de donnée : 
+    - MySQL
+  
   # Package : 
     - expressJS
     - cors
     - helmet
     - express-rate-limit
-    - bcryptjs
 ```
 ## Installation
 
@@ -51,7 +52,7 @@ Depuis votre terminal de commande :
 $ git clone https://github.com/Andy-d-g/Form-Authentification.git
 
 # Aller dans le repertoire
-$ cd Form-Authentification
+$ cd Gestion-de-projet---D/
 
 # Installer les packages (server) [ / ]
 $ cd Server
@@ -67,8 +68,7 @@ $ npm i
 # Lancer le projet
 $ npm run dev
 
-# Se rendre sur la page web 
-$ open http://localhost:3000/
+# Se rendre sur la page web : http://localhost:3000/
 
 ```
 ## Contributeurs
