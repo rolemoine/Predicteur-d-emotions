@@ -1,24 +1,37 @@
 <template>
-  <main>
-    <h2>Choisir la bonne emotion</h2>
-    <div class="space">
-      <input type='input' placeholder='Ecrire votre phrase' class='input' v-model='line'>
-    </div>
-    <div class="space">
-      <input type='button' value='Positif' class='btn' :style='emotion === "+" ? "background: green" : "" ' @click='emotion="+"'>
-      <input type='button' value='Negatif' class='btn' :style='emotion === "-" ? "background: red" : "" ' @click='emotion="-"'>
-    </div>
-    <div class='error' v-if='error'>
-      {{ error }}
-    </div>
-    <div class='result' v-if='result' :style='result.includes("bonne") ? "color: green" : "color: red"'>
-      {{ result }}
-    </div>
-    <div>
-      <input type='button' value='Envoyer' class='btn' @click='send'>
-    </div>
+  <body>
 
-  </main>
+
+    <div id="main">
+      <header>
+        <h2 >Choisir la bonne emotion</h2>
+      </header>
+
+      <section>
+        <div class="space">
+          <input type='input' placeholder='Write your lines' class='input' v-model='line'>
+        </div>
+        <div class="space">
+          <input type='button' value='Positive' class='btn' :style='emotion === "+" ? "background: green" : "" ' @click='emotion="+"'>
+          <input type='button' value='Negative' class='btn' :style='emotion === "-" ? "background: red" : "" ' @click='emotion="-"'>
+        </div>
+        <div class='error' v-if='error'>
+          {{ error }}
+        </div>
+        <div class='result' v-if='result' :style='result.includes("bonne") ? "color: green" : "color: red"'>
+          {{ result }}
+        </div>
+        <div>
+          <input type='button' value='Envoyer' class='btn' @click='send'>
+        </div>
+      </section>
+      <footer>
+
+      </footer>
+
+    </div>
+  </body>
+
 </template>
 
 <script>
@@ -78,21 +91,56 @@
 </script>
 
 <style>
-main {
+html, body {
+  height: 100%;
+  margin: 0; padding: 0;
+}
+body {
+
+  display : table;
+  width: 100%;
+  background-color: burlywood;
+}
+footer{
+
+  background: url("../image/images.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position:absolute;
+
+  bottom:0;
+
+  width:100%;
+
+  padding-top:50px;
+
+  height:50px;
+
+}
+.form-group{
+  background: aqua;
+}
+
+section{
     position: absolute;
     top: 50%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    background-color: #4f467e;
+    background-color: #b2aeb0;
     padding: 40px;
     border-radius: 2em;
 }
 h2 {
-
+  text-align: center;
+  border: 3px solid green;
 }
 .btn {
+  margin-left :10px;
+  box-shadow: 5px 5px 5px black;
   padding: 10px;
   border: 0;
   border-radius: 4px;
