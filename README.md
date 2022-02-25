@@ -76,6 +76,9 @@ $ npm run dev
 # Se rendre sur la page web : http://localhost:3000/
 
 ```
+## Sources
+- [Bert Model](https://skimai.com/fine-tuning-bert-for-sentiment-analysis/)
+
 ## Contributeurs
 
 @Andy-d-g
