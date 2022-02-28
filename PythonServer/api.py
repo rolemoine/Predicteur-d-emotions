@@ -1,12 +1,12 @@
 from fastapi import FastAPI
 import os
+import copy_bert_sentiment_predict
+from copy_bert_sentiment_predict import MyModel
 
 app = FastAPI()
+model = MyModel()
 
 @app.get("/text/{text}")
 async def text(text):
-	stream = os.popen('python bert_sentiment_predict.py "' + text + '"')
-	output = stream.read()
-	output = output.rstrip("\n")
-	output = output.split(",")
-	return {"predicted" : output[0], "accuracy" : output[1]}
+	MyModel()
+	return model.predict(text)
