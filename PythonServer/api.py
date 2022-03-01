@@ -1,7 +1,6 @@
 from fastapi import FastAPI
 import os
-import copy_bert_sentiment_predict
-from copy_bert_sentiment_predict import MyModel
+from bert_sentiment_predict import MyModel
 
 app = FastAPI()
 model = MyModel()
