@@ -130,12 +130,12 @@ def main():
 
 	path = 'C:/Users/ThinkPad/Desktop/datasetTest.txt'
 	#dataBase.loadFile(conn, dbCursor, "data")
-
+	col = "(name, sentiment, review)"
 	column = "name, review"
 	condition = "name = 'ryry'"
 	values = ("radja", "a", "b")
 
-	dataBase.insertElem(conn, dbCursor, "data", columns, values)
+	dataBase.insertElem(conn, dbCursor, "data", col, values)
 	dataBase.selectAll(dbCursor,"data")
 	dataBase.selectColumn(dbCursor,column,"data")
 	dataBase.selectElems(dbCursor,column,"data",condition)
