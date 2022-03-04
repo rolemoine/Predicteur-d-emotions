@@ -111,8 +111,8 @@ class DataBase:
 
 
 def main():
-	dataBase = DataBase("NewProjet")
-	conn, dbCursor = dataBase.connexionDB("localhost","root","RADJAAZZ12")
+	dataBase = DataBase("PROJET")
+	conn, dbCursor = dataBase.connexionDB("localhost","root","")
 	dataBase.showDb(dbCursor)
 
 	try:
@@ -129,8 +129,17 @@ def main():
 		dataBase.selectAll(dbCursor, "data")
 
 	path = 'C:/Users/ThinkPad/Desktop/datasetTest.txt'
-	dataBase.loadFile(conn, dbCursor, "data")
+	#dataBase.loadFile(conn, dbCursor, "data")
 
+	column = "name, review"
+	condition = "name = 'ryry'"
+	values = ("radja", "a", "b")
+
+	dataBase.insertElem(conn, dbCursor, "data", columns, values)
+	dataBase.selectAll(dbCursor,"data")
+	dataBase.selectColumn(dbCursor,column,"data")
+	dataBase.selectElems(dbCursor,column,"data",condition)
+	dataBase.updateElem(conn, dbCursor, "data", "name='ryry'","name ='radja'")
 
 	dataBase.closeDB(dbCursor, conn)
 
