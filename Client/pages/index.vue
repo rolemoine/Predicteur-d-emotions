@@ -9,7 +9,7 @@
 
       <section>
         <div class="space">
-          <input type='input' placeholder='Write your line' class='input' v-model='line'>
+          <input type='input' placeholder='Write your lines' class='input' v-model='line'>
         </div>
         <div class="space">
           <input type='button' value='Positive' class='btn' :style='emotion === "+" ? "background: green" : "" ' @click='emotion="+"'>
@@ -62,11 +62,11 @@
       async send() {
         this.result = ''
         if (!this.emotion) {
-          this.error = 'Veuillez choisir une emotion';
+          this.error = 'please choose a feeling';
           return ;
         }
         else if (!this.line) {
-          this.error = 'Veuillez ecrire une phrase';
+          this.error = 'please write a line';
           return ;
         }
         this.error = ''
