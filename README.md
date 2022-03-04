@@ -48,6 +48,17 @@ Server :
     - helmet
     - express-rate-limit
 ```
+
+Model & Accuracy: 
+```
+  # Traditional methods : 
+    - Logistic Regression 87.40
+    - Naïve Bayes (in process)
+
+  # Deep Learning methods :
+    - RNN (LSTM) 77.07
+    - DNN (BERT) 93.02
+```
 ## Installation
 
 Depuis votre terminal de commande : 
@@ -76,6 +87,9 @@ $ npm run dev
 # Se rendre sur la page web : http://localhost:3000/
 
 ```
+## Sources
+- [Bert Model](https://skimai.com/fine-tuning-bert-for-sentiment-analysis/)
+
 ## Contributeurs
 
 @Andy-d-g
