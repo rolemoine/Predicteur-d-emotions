@@ -4,12 +4,12 @@
 
     <div id="main">
       <header>
-        <h2 >Choisir la bonne emotion</h2>
+        <h2 >choose the right feeling</h2>
       </header>
 
       <section>
         <div class="space">
-          <input type='input' placeholder='Write your lines' class='input' v-model='line'>
+          <input type='input' placeholder='Write your line' class='input' v-model='line'>
         </div>
         <div class="space">
           <input type='button' value='Positive' class='btn' :style='emotion === "+" ? "background: green" : "" ' @click='emotion="+"'>
@@ -22,7 +22,7 @@
           {{ result }}
         </div>
         <div>
-          <input type='button' value='Envoyer' class='btn' @click='send'>
+          <input type='button' value='Send' class='btn' @click='send'>
         </div>
       </section>
       <footer>
